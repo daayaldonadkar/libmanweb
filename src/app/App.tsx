@@ -203,7 +203,7 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="hidden md:block text-slate-600 text-sm font-semibold px-4 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+          <button className="hidden text-slate-600 text-sm font-semibold px-4 py-2 rounded-xl hover:bg-slate-100 transition-colors">
             Log in
           </button>
           <button className="hidden md:flex items-center gap-1.5 bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-primary/90 transition-all active:scale-95 shadow-lg shadow-primary/25">
