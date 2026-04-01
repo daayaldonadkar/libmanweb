@@ -27,6 +27,7 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import { motion, AnimatePresence } from "motion/react";
 import { Link, RouterProvider, createBrowserRouter } from "react-router";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { DeleteAccount } from "./pages/DeleteAccount";
 
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 const WA_NUMBER = "919876543210"; // ← Replace with your real WhatsApp number
@@ -1407,6 +1408,9 @@ function Footer() {
               <Link to="/privacy-policy" className="text-slate-400 hover:text-primary transition-colors font-medium">
                 Privacy Policy
               </Link>
+              <Link to="/delete-account" className="text-slate-400 hover:text-primary transition-colors font-medium">
+                Delete Account
+              </Link>
               <a href="#" className="text-slate-400 hover:text-primary transition-colors font-medium">
                 Terms
               </a>
@@ -1534,6 +1538,7 @@ export function LandingPage() {
 const router = createBrowserRouter([
   { path: "/", Component: LandingPage },
   { path: "/privacy-policy", Component: PrivacyPolicy },
+  { path: "/delete-account", Component: DeleteAccount },
   {
     path: "*",
     Component: () => (
