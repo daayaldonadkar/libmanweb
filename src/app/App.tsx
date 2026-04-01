@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
   BookOpen,
   Users,
@@ -1553,7 +1553,14 @@ const router = createBrowserRouter([
       </div>
     ),
   },
-]);
+], {
+  future: { v7_normalizeFormMethod: true },
+});
+router.subscribe(({ location }) => {
+  if (location.action !== "POP") {
+    window.scrollTo(0, 0);
+  }
+});
 
 export default function App() {
   return <RouterProvider router={router} />;
