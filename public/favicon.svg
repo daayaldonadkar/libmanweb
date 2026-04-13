@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#4338ca"/>
+  <g transform="translate(256,256)">
+    <g transform="scale(1.1)">
+      <!-- Left page -->
+      <path d="M-8,-90 L-8,70 Q-8,80 -18,80 L-70,80 Q-90,80 -90,60 L-90,-60 Q-90,-80 -70,-80 L-18,-80 Q-8,-80 -8,-70 Z" fill="white" opacity="0.95"/>
+      <line x1="-78" y1="-50" x2="-18" y2="-50" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <line x1="-78" y1="-30" x2="-18" y2="-30" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <line x1="-78" y1="-10" x2="-18" y2="-10" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <line x1="-78" y1="10" x2="-50" y2="10" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <!-- Right page -->
+      <path d="M8,-90 L8,70 Q8,80 18,80 L70,80 Q90,80 90,60 L90,-60 Q90,-80 70,-80 L18,-80 Q8,-80 8,-70 Z" fill="white" opacity="0.85"/>
+      <line x1="18" y1="-50" x2="78" y2="-50" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <line x1="18" y1="-30" x2="78" y2="-30" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <line x1="18" y1="-10" x2="78" y2="-10" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <line x1="18" y1="10" x2="50" y2="10" stroke="#4338ca" stroke-width="4" opacity="0.3"/>
+      <!-- Spine -->
+      <path d="M-8,-90 Q0,-95 8,-90 L8,70 Q0,80 -8,70 Z" fill="white" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

@@ -178,7 +178,7 @@ function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-5 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5 group">
+        <Link to="/" className="flex items-center gap-2.5 group">
           <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform">
             <BookOpen className="w-5 h-5 text-white" />
           </div>
@@ -188,7 +188,7 @@ function Navbar() {
           >
             libdesk
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
@@ -1556,10 +1556,8 @@ const router = createBrowserRouter([
 ], {
   future: { v7_normalizeFormMethod: true },
 });
-router.subscribe(({ location }) => {
-  if (location.action !== "POP") {
-    window.scrollTo(0, 0);
-  }
+router.subscribe(() => {
+  window.scrollTo(0, 0);
 });
 
 export default function App() {
